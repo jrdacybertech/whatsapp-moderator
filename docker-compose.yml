@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  # Os serviços serão adicionados nas próximas etapas
+
+networks:
+  moderator-network:
+    external: true
