@@ -1,0 +1,29 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - port: 3000
+    onOpen: open-preview
+    visibility: public
+  - port: 8000
+    onOpen: ignore
+    visibility: public
+  - port: 8080
+    onOpen: ignore
+    visibility: public
+  - port: 5000
+    onOpen: ignore
+    visibility: public
+  - port: 27017
+    onOpen: ignore
+    visibility: public
+
+tasks:
+  - init: |
+      echo 'Inicializando o ambiente...'
+    command: |
+      echo 'Ambiente pronto para uso!'
+
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
